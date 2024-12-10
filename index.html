@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Design</title>
+    <style>
+        /* Task 1: Apply RGBA Background Colors */
+        .background-fade {
+            background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+            padding: 50px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Task 2: Enhance Text Visibility with RGBA */
+        .header {
+            font-size: 48px;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Soft black shadow */
+        }
+
+        /* Task 3: Interactive Buttons with RGBA Hover Effects */
+        .interactive-btn {
+            background-color: rgba(255, 0, 0, 0.8); /* Red button */
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .interactive-btn:hover {
+            background-color: rgba(0, 255, 0, 0.8); /* Green on hover */
+        }
+
+        /* Task 4: Smooth Hover Transition for Links */
+        a {
+            color: blue;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        /* Task 5: Animated Button on Click */
+        .interactive-btn:active {
+            animation: enlarge 0.2s forwards; /* Animation on click */
+        }
+
+        @keyframes enlarge {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1); /* Slightly enlarge button */
+            }
+        }
+
+        /* Task 6: Continuous Rotation Animation for an Icon */
+        .icon {
+            font-size: 50px;
+            display: inline-block;
+            animation: rotate 4s linear infinite; /* Continuous rotation */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg); /* Complete rotation */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1: RGBA Background Colors -->
+    <div class="background-fade">
+        <h1 class="header">Welcome to My Website</h1>
+        <button class="interactive-btn">Click Me</button>
+        <i class="icon">🔄</i> <!-- Rotating Icon -->
+    </div>
+
+    <!-- Task 4: Smooth Hover Transition for Links -->
+    <div>
+        <a href="#">This is a link</a>
+    </div>
+
+</body>
+</html>
